@@ -1,0 +1,11 @@
+.form {
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+
+  > *:not(button) {
+    margin-bottom: 25px;
+  }
+}

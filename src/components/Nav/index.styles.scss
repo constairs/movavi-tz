@@ -1,0 +1,31 @@
+@import '../../styles.scss';
+
+nav {
+  ul {
+    padding-left: 0;
+    padding-bottom: 20px;
+    margin: 0 auto 40px;
+    display: flex;
+    max-width: 1200px;
+    list-style-type: none;
+    font-size: 22px;
+    border-bottom: 1px solid $dark;
+
+    li {
+      margin-right: 25px;
+
+      a {
+        color: $dark;
+        text-decoration: none;
+
+        &:hover, &.active {
+          text-decoration: underline;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

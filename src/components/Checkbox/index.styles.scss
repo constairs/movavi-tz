@@ -1,0 +1,60 @@
+@import '../../styles.scss';
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative;
+
+  input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  input + div {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -9px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+    background-color: #fff;
+    border: 1px solid $accent;
+    border-radius: 2px;
+    z-index: 1;
+  }
+
+  input + div::after {
+    content: '\2713';
+    color: $accent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin-top: -18px;
+    margin-left: -9px;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  input:checked + div:after {
+    border-color: $accent;
+    opacity: 1;
+  }
+
+  input:disabled + div {
+    cursor: default;
+  }
+}
+
+
+
+

@@ -1,0 +1,23 @@
+@import '../../styles.scss';
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: $accent;
+  color: #fff;
+  box-shadow: 0 0 4px rgba(46, 52, 64, .33);
+  font-size: 16px;
+
+  &:hover {
+    background-color: darken($accent, 10%);
+  }
+
+  &.red {
+    background-color: red;
+
+    &:hover {
+      background-color: darken(red, 10%);
+    }
+  }
+}

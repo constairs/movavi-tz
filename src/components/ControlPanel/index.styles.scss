@@ -1,0 +1,12 @@
+.control-panel {
+  margin-bottom: 25px;
+  
+  button {
+    margin-right: 25px;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

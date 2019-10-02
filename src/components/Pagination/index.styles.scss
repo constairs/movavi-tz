@@ -1,0 +1,36 @@
+@import '../../styles.scss';
+
+.pagination {
+  padding-left: 0;
+  display: flex;
+  list-style-type: none;
+  padding-bottom: 50px;
+
+  li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      border: 1px solid $accent;
+      color: $accent;
+      cursor: pointer;
+
+      &.active, &:hover {
+        background-color: $accent;
+        color: #fff;
+      }
+    }
+  }
+}

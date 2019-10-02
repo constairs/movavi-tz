@@ -1,0 +1,31 @@
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: darken(#fff, 10%);
+    }
+
+    &-link {
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  &.selectable {
+    .list-item {
+      &-link {
+        margin-left: 18px;
+      }
+    }
+  }
+}
